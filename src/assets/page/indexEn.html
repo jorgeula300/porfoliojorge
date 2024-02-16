@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta name="author" content="Jorge Luis Sanchez Mendoza" />
+    <meta name="Description" content=" Mi primer portafolio hecho con mucho esfuerso" />
+    <meta name="Keywords" content="portfolio, trabajo,beveloper" />
+    <meta name="theme-color" content="" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="shortcut icon" href="../img/logo_jorge-removebg-preview.png" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script defer type="module" src="../js/main.js"></script>
+</head>
+
+<body>
+    <header class="header w-full   fixed px-5 text-black dark:text-white">
+        <nav class="navbar w-full h-full flex   md:flex justify-between items-center">
+            <a class="navbar--titulo text-2xl  md:text-4xl font-bold" href="#home">Deve<span
+                    class="text-[#4BDB9E]">loper</span></a>
+            <div class="navbar--div  md:flex  md:justify-center md:items-center">
+                <ul
+                    class="navbar__div--ul hidden w-full absolute h-[100vh] -top-2 bg-emerald-800 rounded-lg md:rounded-none transition-all duration-200 md:bg-transparent md:top-0  md:relative  md:h-full md:flex md:justify-center md:items-center md:space-x-4  lg:text-lg md:font-semibold [&>li]:block [&>li]:mx-4 my-12 md:my-0 
+                 md:[&>li>a]:text-lg   lg:[&>li>a]:text-xl ">
+                    <li class="navbar__link">
+                        <a href="#home" class="navbar__link--a hover:text-[#4BDB9E]">Home</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#about" class="navbar__link--a hover:text-[#4BDB9E]">About Me</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#skills" class="navbar__link--a hover:text-[#4BDB9E]">Skills</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#projects" class="navbar__link--a hover:text-[#4BDB9E]">Portfolio</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#contact" class="navbar__link--a hover:text-[#4BDB9E]">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar__toggles flex justify-center items-center space-x-3">
+                <div
+                    class="navbar__toggle--darkmode flex justify-center items-center w-[20px] h-[20px] bg-slate-300 rounded-full relative">
+                    <input type="checkbox" id="darkmode-toggle"
+                        class="navbar__toggle--darkmode-input absolute w-full h-full z-20 cursor-pointer opacity-0" />
+
+                    <i class="bx bxs-sun navbar__toggle--darkmode-sun text-yellow-500"></i>
+                    <i class="bx bxs-moon navbar__toggle--darkmode-moon text-[#1e3751] absolute hidden"></i>
+                </div>
+                <a href="../../index.html"><img class="w-[30px]" src="../img/Bandera_de_España.svg" alt="espñol"></a>
+            </div>
+
+            
+            <label for="check" class="checkbox__menu md:hidden">
+                <i class="bx bx-menu-alt-left text-2xl"></i>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <section
+            class="home w-full h-[100vh] flex flex-col md:flex-row justify-center items-center  md:flex md:justify-center md:items-center gap-28 lg:gap-28 bg-slate-500 text-white dark:bg-[#091922] dark:text-white"
+            id="home">
+            <div class="home--descrip flex flex-col justify-center items-center md:w-[500px] space-y-4">
+                <h1 class="home__titulo md:text-center text-2xl md:text-4xl font-bold">
+                    <span class="home__titulo--span text-[#4BDB9E]">Hello</span> my name is
+                    Jorge.
+                </h1>
+                <article class="home__descrip--article flex flex-col space-y-3">
+                    <p class="home__descrip--parrafo  text-sm mx-4 md:text-2xl">
+                        I am a web developer, passionate about technology and programming.
+                    </p>
+                    <div class="home__descrip--redes flex items-center space-x-4  mx-4">
+                        <button class="border-solid bg-[#4BDB9E] px-2 py-1 md:px-4 md:py-1 rounded-xl md:text-lg font-semibold">
+                            Download CV
+                        </button>
+                        <img src="../img/icons8-linkedin 1.svg" alt="Linkedin" class="svg-linkedin w-[27px] md:w-[37px]" />
+                        <img src="../img/icons8-github 1.svg" alt="github" class="svg-github  w-[27px] md:w-[37px]" />
+                    </div>
+                </article>
+            </div>
+
+            <div class="home--img">
+                <div
+                    class="img__circulo--externo w-[200px] h-[200px] md:w-[400px] md:h-[400px] flex justify-center items-center bg-gradient-to-t  from-[#ffffffa5] to-[#4BDB9E] rounded-full overflow-hidden">
+                    <figure
+                        class="img__circulo--interno w-[180px] h-[180px] md:w-[370px] md:h-[370px] flex justify-center items-center bg-gradient-to-t from-[#2e7055] to-[#091922] rounded-full overflow-hidden">
+                        <img class="img_home w-[80%]" src="../img/FOTO DIGITAL 2 1.png" alt="Author" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="about w-full min-h-[100vh] bg-slate-200 dark:bg-[#06121A] dark:text-white text-black flex flex-col md:flex-row justify-center items-center" id="about">
+            <div class="abaut__div1 md:w-[50%] flex justify-center items-center">
+                <div
+                    class="abaut__div1--divExter flex justify-center items-center w-[80%] md:w-[80%] lg:w-[70%] lg:h-[300px] xl:h-[450px] py-4 bg-[#4BDB9E] rounded-full">
+                    <figure
+                        class="abaut__div1--divInterior flex justify-center items-center overflow-hidden w-[85%] md:w-[90%] h-full bg-gradient-to-t from-[#4BDB9E] to-[#06121A] rounded-full">
+                        <img class="abaut__div--img w-[75%]" src="../img/FOTO DIGITAL 1 1.svg" alt="img abaut" />
+                    </figure>
+                </div>
+            </div>
+            <div class="abaut__div2 md:w-[500px] lg:w-[600px] flex flex-col space-y-4">
+                <h2 class="abaut__title text-xl  md:text-3xl font-bold text-center">
+                    <span class="text-[#4BDB9E] ">About</span> Me
+                </h2>
+                <article>
+                    <p class="abaut__div--p text-sm mx-3 md:text-lg lg:text-lg">
+                        I specialize in developing user-friendly responsive websites, with a focus on user experience. I have experience working with technologies such as HTML, CSS, JavaScript, React, Next, and MySQL.
+                    </p>
+
+                    <p class="abaut__div--p text-sm mx-3  md:text-lg lg:text-lg">
+                        In my spare time, I enjoy learning new technologies and contributing to open source projects.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!------------------------------------ Habilida---------------------------------------------------------------------------- -->
+
+        <section
+            class="skills w-full min-h-[100vh] flex flex-col justify-center items-center space-y-7 bg-slate-500 text-white dark:bg-[#091922]  dark:text-white py-10"
+            id="skills">
+            <h2 class="skills--title text-xl sm:text-2xl md:text-3xl font-bold">
+                My <span class="text-[#4BDB9E]">Skills</span>
+            </h2>
+            <div
+                class="skills__div--habilidades md:w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center [&>div>figure>img]:w-[80px] md:[&>div>figure>img]:w-[100px] lg:[&>div>figure>img]:w-[100px] [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:items-center [&>div]:space-y-5 [&>div>h2]:text-lg [&>div>h2]:font-bold">
+                <div class="habilidades habilidad-1">
+                    <h2>Html</h2>
+                    <figure class="w-full">
+                        <img src="../img/html-5-svgrepo-com.svg" alt="Html" />
+                    </figure>
+                    <!-- <article class="skills__article texto--html">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                            molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit
+                            qui magnam suscipit sequi exercitationem aperiam velit,
+                            voluptatum consequuntur fugit ab.
+                        </p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-2">
+                    <h2>Css</h2>
+                    <figure>
+                        <img src="../img/css-3-svgrepo-com.svg" alt="Css" />
+                    </figure>
+
+                    <!-- <article class="skills__article texto--css">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                            molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit
+                            qui magnam suscipit sequi exercitationem aperiam velit,
+                            voluptatum consequuntur fugit ab.
+                        </p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-3">
+                    <h2>Tailwind</h2>
+
+                    <figure>
+                        <img src="../img/tailwind-css-svgrepo-com.svg
+                        " alt="Tailwind" />
+                    </figure>
+                    <!-- <article class="skills__article texto--tailwind">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-4">
+                    <h2>JavaScript</h2>
+
+                    <figure>
+                        <img src="../img/javascript-svgrepo-com.svg" alt="JavaScript" />
+                    </figure>
+                    <!-- <article class="skills__article texto--js">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-5">
+                    <h2>React js</h2>
+
+                    <figure>
+                        <img src="../img/react-1-logo-svgrepo-com.svg" alt="React js" />
+                    </figure>
+                    <!-- <article class="skills__article texto--react">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-6">
+                    <h2>Next js</h2>
+                    <figure>
+                        <img src="../img/next-js-svgrepo-com.svg" alt="img next " />
+                    </figure>
+                    <!-- <article class="skills__article texto--next">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-7">
+                    <h2>Node js</h2>
+
+                    <figure>
+                        <img src="../img/node-js-svgrepo-com.svg" alt="Node js" />
+                    </figure>
+                    <!-- <article class="skills__article texto--node">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-8">
+                    <h2>Express js</h2>
+
+                    <figure>
+                        <img src="../img/express-svgrepo-com.svg" alt="img express" />
+                    </figure>
+                    <!-- <article class="skills__article texto--express">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-9">
+                    <h2>Prisma orm</h2>
+
+                    <figure>
+                        <img src="../img/light-prisma-svgrepo-com.svg" alt="img prisma" />
+                    </figure>
+                    <!-- <article class="skills__article texto--prisma">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+                <div class="habilidades habilidad-10">
+                    <h2>MySQL</h2>
+
+                    <figure>
+                        <img src="../img/sql-database-generic-svgrepo-com.svg" alt="img Sql" />
+                    </figure>
+                    <!-- <article class="skills__article texto--sql">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae quaerat quo. Delectus minus quibusdam ad a omnis sit qui magnam suscipit sequi exercitationem aperiam velit, voluptatum consequuntur fugit ab.</p>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- //Proyectos -->
+
+        <section
+            class="projects w-full min-h-[100vh] bg-slate-200 dark:bg-[#06121A] 
+            text-black dark:text-white flex flex-col justify-center items-center space-y-3 py-10"
+            id="projects">
+            <h2 class="titulo--proyectos text-xl  md:text-3xl font-bold lg:mt-10">Portfolio</h2>
+            <div
+                class="proyectos--div xl:w-[50%] lg:w-[60%] lg:pb-10  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 justify-items-center [&>div]:w-[250px] [&>div]:h-[350px]  md:[&>div]:w-[300px] md:[&>div]:h-[300px] [&>div]:border [&>div]:border-solid [&>div]:border-gray-800 [&>div]:bg-slate-800 [&>div]:text-white [&>div]:shadow-lg [&>div]:shadow-gray-700 dark:[&>div]:border-white [&>div]:rounded-xl [&>div]:overflow-hidden [&>div>img]:w-full [&>div>img]:h-[50%] [&>div>img]:bg-white [&>div>h2]:text-xl [&>div>h2]:text-center [&>div>p]:text-xs [&>div>div]:flex [&>div>div]:items-center [&>div>div>img]:w-[15px]">
+                <div class="proyecto proyecto--1">
+                    <img class="img__portafolio__cart" src="../img/ecomer portafolio.png" alt="" />
+                    <h2>Ecomers</h2>
+                    <p class="parrafo--proyectos">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                        qui, magnam provident nulla aliquid repellat saepe quis ullam
+                        placeat illum vel vero, in rerum est, necessitatibus quisquam
+                        inventore deserunt sit!
+                    </p>
+                    <div class="proyectos--tecnologias">
+                        <span>Technologies used:</span>
+                        <img class="img__portafolio__tecnologias" src="../img/react-1-logo-svgrepo-com.svg"
+                            alt="react" />
+                        <img class="img__portafolio__tecnologias" src="../img/tailwind-css-svgrepo-com.svg"
+                            alt="tailwind" />
+                        <img class="img__portafolio__tecnologias" src="../img/node-js-svgrepo-com.svg"
+                            alt="node" />
+                        <img class="img__portafolio__tecnologias" src="../img/express-svgrepo-com.svg"
+                            alt="express" />
+                        <img class="img__portafolio__tecnologias" src="../img/light-prisma-svgrepo-com.svg"
+                            alt="prisma" />
+                        <img class="img__portafolio__tecnologias"
+                            src="../img/sql-database-generic-svgrepo-com.svg" alt="sql" />
+                    </div>
+                    <div class="proyectos--botones flex justify-center items-center 
+                    space-x-2 md:space-x-5">
+                        <button
+                            class="botones__proyecto ver-demo bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            demo</button>
+                        <button
+                            class="botones__proyecto ver-codigo  bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            code</button>
+                    </div>
+                </div>
+                <div class="proyecto proyecto--2">
+                    <img class="img__portafolio__cart" src="../img/daschboard portafolio.png" alt="" />
+                    <h2>Dashboard</h2>
+                    <p class="parrafo--proyectos">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                        qui, magnam provident nulla aliquid repellat saepe quis ullam
+                        placeat illum vel vero, in rerum est, necessitatibus quisquam
+                        inventore deserunt sit!
+                    </p>
+                    <div class="proyectos--tecnologias">
+                        <span>Technologies used:</span>
+                        <img class="img__portafolio__tecnologias" src="../img/react-1-logo-svgrepo-com.svg"
+                            alt="react" />
+                        <img class="img__portafolio__tecnologias" src="../img/tailwind-css-svgrepo-com.svg"
+                            alt="tailwind" />
+                        <img class="img__portafolio__tecnologias" src="../img/node-js-svgrepo-com.svg"
+                            alt="node" />
+                        <img class="img__portafolio__tecnologias" src="../img/express-svgrepo-com.svg"
+                            alt="express" />
+                        <img class="img__portafolio__tecnologias" src="../img/light-prisma-svgrepo-com.svg"
+                            alt="prisma" />
+                        <img class="img__portafolio__tecnologias"
+                            src="../img/sql-database-generic-svgrepo-com.svg" alt="sql" />
+                    </div>
+                    <div class="proyectos--botones flex justify-center items-center space-x-2 md:space-x-5">
+                        <button
+                            class="botones__proyecto ver-demo  bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            demo</button>
+                        <button
+                            class="botones__proyecto ver-codigo  bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            code</button>
+                    </div>
+                </div>
+                <div class="proyecto proyecto--3">
+                    <img class="img__portafolio__cart" src="../img/portafolio crud .png" alt="" />
+                    <h2>Crud</h2>
+                    <p class="parrafo--proyectos">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                        qui, magnam provident nulla aliquid repellat saepe quis ullam
+                        placeat illum vel vero, in rerum est, necessitatibus quisquam
+                        inventore deserunt sit!
+                    </p>
+                    <div class="proyectos--tecnologias">
+                        <span>Technologies used:</span>
+                        <img class="img__portafolio__tecnologias" src="../img/react-1-logo-svgrepo-com.svg"
+                            alt="react" />
+                        <img class="img__portafolio__tecnologias" src="../img/tailwind-css-svgrepo-com.svg"
+                            alt="tailwind" />
+                        <img class="img__portafolio__tecnologias" src="../img/node-js-svgrepo-com.svg"
+                            alt="node" />
+                        <img class="img__portafolio__tecnologias" src="../img/express-svgrepo-com.svg"
+                            alt="express" />
+                        <img class="img__portafolio__tecnologias" src="../img/light-prisma-svgrepo-com.svg"
+                            alt="prisma" />
+                        <img class="img__portafolio__tecnologias"
+                            src="../img/sql-database-generic-svgrepo-com.svg" alt="sql" />
+                    </div>
+                    <div class="proyectos--botones flex justify-center items-center space-x-2 md:space-x-5">
+                        <button
+                            class="botones__proyecto ver-demo  bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            demo</button>
+                        <button
+                            class="botones__proyecto ver-codigo  bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            code</button>
+                    </div>
+                </div>
+                <div class="proyecto proyecto--4">
+                    <img class="img__portafolio__cart" src="../img/veterinario portafolio .png" alt="" />
+                    <h2 class="titulo__dentro__cartas">Veterinarian</h2>
+                    <p class="parrafo--proyectos">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                        qui, magnam provident nulla aliquid repellat saepe quis ullam
+                        placeat illum vel vero, in rerum est, necessitatibus quisquam
+                        inventore deserunt sit!
+                    </p>
+                    <div class="proyectos--tecnologias">
+                        <span>Technologies used:</span>
+                        <img class="img__portafolio__tecnologias" src="../img/react-1-logo-svgrepo-com.svg"
+                            alt="react" />
+                        <img class="img__portafolio__tecnologias" src="../img/tailwind-css-svgrepo-com.svg"
+                            alt="tailwind" />
+                        <img class="img__portafolio__tecnologias" src="../img/node-js-svgrepo-com.svg"
+                            alt="node" />
+                        <img class="img__portafolio__tecnologias" src="../img/express-svgrepo-com.svg"
+                            alt="express" />
+                        <img class="img__portafolio__tecnologias" src="../img/light-prisma-svgrepo-com.svg"
+                            alt="prisma" />
+                        <img class="img__portafolio__tecnologias"
+                            src="../img/sql-database-generic-svgrepo-com.svg" alt="sql" />
+                    </div>
+                    <div class="proyectos--botones flex justify-center items-center space-x-2 md:space-x-5">
+                        <button
+                            class="botones__proyecto ver-demo  bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            demo</button>
+                        <button
+                            class="botones__proyecto ver-codigo  bg-white text-black rounded-lg px-5 py-[1px] font-semibold hover:bg-[#2e7055] hover:text-white">View
+                            code</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------------- Contactos --------------------------------------------------------------------------------------------------------->
+
+        <section class="contact w-full min-h-[100vh] bg-slate-500 dark:bg-[#091922] flex  justify-center items-center text-white"
+            id="contact">
+            <form action="" class="form--contact flex flex-col justify-center items-center w-[95%] md:w-[80%] min-h-[300px] rounded-lg bg-slate-800">
+                <h2 class="h1__contacto text-center  font-bold lg:text-2xl my-5">Contact</h2>
+                <div
+                    class="caja__contact contact__caja1 flex flex-col md:flex-row justify-center items-center space-x-4 [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:space-y-3 mb-2 [&>div>input]:w-[260px] lg:[&>div>input]:w-[300px] [&>div>input]:bg-transparent  [&>div>input]:border-2 [&>div>input]:border-solid [&>div>input]:border-b-[#2e7055] [&>div>input]:border-x-transparent [&>div>input]:border-t-transparent ">
+                    <div class="div__interno_contact   ">
+                        <label for="">Full name</label>
+                        <input class="imput__contact nombre__contact" type="text" name="Nombre" id="nombre"
+                            placeholder="name" />
+                    </div>
+                    <div class="div__interno_contact">
+                        <label for="">Email</label>
+                        <input class="imput__contact correo__contact" type="email" name="Correo" id="correo"
+                            placeholder="anoni@hotmail.com" />
+                    </div>
+                </div>
+
+                <div
+                    class="caja__contact contact__caja2 flex flex-col md:flex-row justify-center items-center space-x-4 [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:space-y-3 mb-2 [&>div>input]:w-[260px] lg:[&>div>input]:w-[300px] [&>div>input]:bg-transparent  [&>div>input]:border-2 [&>div>input]:border-solid [&>div>input]:border-b-[#2e7055] [&>div>input]:border-x-transparent [&>div>input]:border-t-transparent  ">
+                    <div class="div__interno_contact">
+                        <label for="">Phone number</label>
+                        <input class="imput__contact asunto__contact" type="number" type="number" name="NumeroT"
+                            placeholder="number" />
+                    </div>
+
+                    <div class="div__interno_contact">
+                        <label for="">Subject</label>
+                        <input class="imput__contact asunto__contact" type="text" name="Asunto" id="asunto"
+                            placeholder="Subject" />
+                    </div>
+                </div>
+
+                <div class="caja__contact__textarea flex flex-col justify-center md:w-[580px] lg:w-[610px] m-auto  ">
+                    <label for="">Message</label>
+                    <textarea
+                        class="textarea__contact texto__contact bg-transparent border-2 border-solid border-t-transparent border-x-transparent border-b-[#2e7055]"
+                        name="Texto" id="" rows="2" placeholder="message"></textarea>
+                </div>
+
+                <button class="boton__contact w-[50%] mb-5 mt-2 bg-[#2e7055] rounded-lg lg:text-lg font-semibold hover:bg-[#4BDB9E] hover:text-black ">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer w-full min-h-[200px] text-white bg-gradient-to-t from-[#091922] to-[#2e7055] flex flex-col justify-center items-center  " id="#footer">
+        <div class="container__footer flex justify-center items-center w-full border-2 border-gray-500 space-x-5 border-solid border-x-transparent border-t-transparent">
+            <div class="div__footer__interno w-[40%] text-center ">
+                <h2 class=" lg:text-2xl">Jorge Luis Sanchez Mendoza</h2>
+                <p class=" lg:text-lg">
+                    I am a web developer, passionate about technology and programming.
+                </p>
+            </div>
+
+            <div class="div__footer__interno w-[40%]">
+                <h2 class="lg:text-2xl ">Social Media</h2>
+
+                <div class="redes__footer flex items-center [&>i]:text-2xl space-x-4">
+                    <i class="bx bxl-facebook-circle"></i>
+                    <i class="bx bxl-linkedin-square"></i>
+                    <i class="bx bxl-instagram-alt"></i>
+                    <i class="bx bxl-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__footer derechos__footer">
+            <h2>© 2024, All rights reserved.</h2>
+        </div>
+    </footer>
+</body>
+
+</html>
